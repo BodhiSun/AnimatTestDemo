@@ -1,0 +1,31 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<vector  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="150dp"
+    android:height="150dp"
+    android:viewportHeight="70"
+    android:viewportWidth="70">
+
+    <!--SVG语法基础命令-->
+    <!--M：新建起点，参数x，y（M20， 30）-->
+    <!--L：连接直线，参数x，y（L30， 20）-->
+    <!--H：纵坐标不变，横向连线，参数x（H20）-->
+    <!--V：横坐标不变，纵向连线，参数y（V30）-->
+    <!--Q：二次贝塞尔曲线，参数x1，y1，x2，y2（Q10，20，30，40）-->
+    <!--C：三次贝塞尔曲线，参数x1，y1，x2，y2，x3，y3（C10，20，30，40，50， 60）-->
+    <!--Z：连接首尾，闭合曲线，无参数-->
+
+    <group
+        android:name="rotationGroup"
+        android:pivotY="35"
+        android:pivotX="35"
+        android:rotation="0.0">
+
+    <path
+        android:name="back"
+        android:fillColor="#000000"
+        android:pathData="M10,10 L60,10 L60,20 L10,20 Z M10,30 L60,30
+                L60,40 L10,40 Z M10,50 L60,50 L60,60 L10,60 Z" />
+    </group>
+
+
+</vector >

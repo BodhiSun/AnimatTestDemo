@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+
+    <ImageView
+        android:id="@+id/vector_ic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/vector_heart"
+        app:layout_constraintBottom_toTopOf="@+id/attribute_animat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/vector_back_animat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/vector_back_animat"
+        app:layout_constraintTop_toBottomOf="@+id/vector_ic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/vector_bird_animat" />
+
+    <ImageView
+        android:id="@+id/vector_bird_animat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/vector_bird_selector"
+        app:layout_constraintTop_toBottomOf="@+id/vector_back_animat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toTopOf="@+id/vector_trimPath_animat" />
+
+    <ImageView
+        android:id="@+id/vector_trimPath_animat"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:src="@drawable/vector_trimpath_selector"
+        app:layout_constraintTop_toBottomOf="@+id/vector_bird_animat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

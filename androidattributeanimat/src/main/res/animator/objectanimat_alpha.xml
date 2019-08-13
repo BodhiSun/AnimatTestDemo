@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:valueFrom="1"
+    android:valueTo="0.1"
+    android:valueType="floatType"
+    android:duration="2000"
+    android:repeatMode="reverse"
+    android:repeatCount="1"
+    android:propertyName="alpha"
+    android:interpolator="@android:anim/accelerate_interpolator">
+
+    <!--android:startOffset 动画延迟开始时间（ms）-->
+    <!--android:fillBefore  动画播放完后，视图是否会停留在动画开始的状态 true-->
+    <!--android:fillAfter   动画播放完后，视图是否会停留在动画结束的状态，优先于fillBefore值 默认为false-->
+    <!--android:fillEnabled 是否应用fillBefore值，对fillAfter值无影响 默认为true-->
+</objectAnimator >

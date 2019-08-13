@@ -1,0 +1,51 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="true">
+
+    <!--Tweem动画 支持移动、缩放、旋转、渐变四种动画，以及这四种动画的组合，不支持自定义View的拓展，动画只是屏幕绘制上的动画，
+    控件的属性并没有改变，一个经典的问题就是一个Button从一个地方移动到另一个地方，点击事件还是在原来的地方-->
+
+    <!--旋转-->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="359"
+        android:duration="1000"
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        android:pivotX="50%"
+        android:pivotY="50%"/>
+
+    <!--位移-->
+    <translate
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="300"
+        android:toYDelta="0"
+        android:duration="1000"
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        />
+
+    <!--透明度-->
+    <alpha
+        android:fromAlpha="1"
+        android:toAlpha="0.1"
+        android:duration="1000"
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        />
+
+    <!--缩放-->
+    <scale
+        android:fromXScale="100%"
+        android:fromYScale="100%"
+        android:toXScale="150%"
+        android:toYScale="150%"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="1000"
+        android:repeatCount="1"
+        android:repeatMode="reverse"/>
+
+
+</set>

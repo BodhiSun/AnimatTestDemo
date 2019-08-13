@@ -1,0 +1,13 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<animated-vector  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vector_back">
+
+    <target
+        android:animation="@anim/rotation_animat"
+        android:name="rotationGroup"/>
+
+    <target
+        android:animation="@anim/path_morph_animat"
+        android:name="back"/>
+
+</animated-vector >
