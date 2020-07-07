@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android"
-    android:oneshot="false">
+    android:oneshot="true">
     <!--oneshot 动画执行一次（true）还是循环执行多次。-->
 
     <item android:drawable="@mipmap/f1"

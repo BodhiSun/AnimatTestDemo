@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.iv_frame_animat)
     void onClickFrame() {
         AnimationDrawable animationDrawable = (AnimationDrawable) iv_frame_animat.getDrawable();
-        animationDrawable.addFrame(getResources().getDrawable(R.mipmap.f11),100);
+        animationDrawable.addFrame(getResources().getDrawable(R.mipmap.f1),200);
+        animationDrawable.stop();
         animationDrawable.start();
 //        animationDrawable.stop();
     }
@@ -113,5 +114,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
     }
 }
